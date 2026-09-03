@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Charlie Crawford Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            color: #222222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1c1c1c;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #cc0000;
+        }
+
+        header {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header h2 {
+            margin: 10px 0 5px;
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #cc0000;
+            margin-top: 0;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 8px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+                       padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #eeeeee;
+            border-left: 4px solid #cc0000;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #cc0000;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        a {
+            color: #b00000;
+        }
+
+        a:hover {
+            color: #750000;
+        }
+
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+                font-size: 0.9rem;
+            }
+
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header h2 {
+                font-size: 1.2rem;
+            }
+
+            main {
+                width: 94%;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .skills-list {
+                flex-direction: column;
+            }
+
+            th,
+            td {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <header>
         <h1>Charlie Crawford</h1>
@@ -14,83 +202,108 @@
         <p>University of Utah</p>
     </header>
 
-    <hr>
+    <main>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a marketing major at the University of Utah with a strong interest
-            in sports marketing and business technology. My career goal is to work
-            in marketing for a golf-related organization, ideally the PGA Tour. I am
-            especially interested in learning how companies use artificial
-            intelligence and customer data to understand their audiences and make
-            better marketing decisions. I would also like to explore how AI can
-            improve fan engagement, personalize digital content, and create more
-            effective marketing campaigns. My technical interests include data
-            analytics, website development, Microsoft Excel, information systems,
-            and AI prompt engineering. Through my coursework and projects, I hope
-            to develop the technical and business skills needed to succeed in the
-            sports and golf industries.
-        </p>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
 
-    <hr>
+            <p>
+                I am a marketing major at the University of Utah with a strong
+                interest in sports marketing and business technology. My career
+                goal is to work in marketing for a golf-related organization,
+                ideally the PGA Tour. I am especially interested in learning how
+                companies use artificial intelligence and customer data to
+                understand their audiences and make better marketing decisions. I
+                would also like to explore how AI can improve fan engagement,
+                personalize digital content, and create more effective marketing
+                campaigns. My technical interests include data analytics, website
+                development, Microsoft Excel, information systems, and AI prompt
+                engineering. Through my coursework and projects, I hope to develop
+                the technical and business skills needed to succeed in the sports
+                and golf industries.
+            </p>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Microsoft Excel</li>
-            <li>Data Analytics</li>
-            <li>AI Prompt Engineering</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
 
-    <hr>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Microsoft Excel</li>
+                <li>Data Analytics</li>
+                <li>AI Prompt Engineering</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+        <section id="projects">
+            <h2>Projects</h2>
 
-        <table border="1">
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>AI Business Analysis</td>
-                <td>Analyze business data using ChatGPT</td>
-            </tr>
-            <tr>
-                <td>Data Visualization</td>
-                <td>Create a dashboard using Tableau</td>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td>Build a responsive website using Bootstrap</td>
-            </tr>
-            <tr>
-                <td>Process Improvement</td>
-                <td>Redesign a business workflow with assistance from AI</td>
-            </tr>
-        </table>
-    </section>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                    </tr>
 
-    <hr>
+                    <tr>
+                        <td>AI Business Analysis</td>
+                        <td>Analyze business data using ChatGPT</td>
+                    </tr>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Resume coming soon.</p>
-    </section>
+                    <tr>
+                        <td>Data Visualization</td>
+                        <td>Create a dashboard using Tableau</td>
+                    </tr>
 
-    <hr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Build a responsive website using Bootstrap</td>
+                    </tr>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: u1522701@utah.edu</p>
-        <p>GitHub: <a href="https://github.com/CharlieCrawford2719">github.com/CharlieCrawford2719</a></p>
+                    <tr>
+                        <td>Process Improvement</td>
+                        <td>
+                            Redesign a business workflow with assistance from AI
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Resume coming soon.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <p>
+                Email:
+                <a href="mailto:u1522701@utah.edu">u1522701@utah.edu</a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/CharlieCrawford2719"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    github.com/CharlieCrawford2719
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Charlie Crawford</p>
+    </footer>
+
+</body>
+</html>
